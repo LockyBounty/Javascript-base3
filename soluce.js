@@ -57,5 +57,45 @@ document.querySelector("#myButton").addEventListener("click", resetChamp);
 
 //Exercice 5 //
 /*Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.  
-**Bonus** Ne faire qu'une seule fonction JavaScript pour cet exercice.*/
+ **Bonus** Ne faire qu'une seule fonction JavaScript pour cet exercice.*/
 
+let x = document.querySelector("#image1");
+let cpt = 6;
+let i = 1;
+if (x.addEventListener) {
+
+  x.addEventListener("mouseover", function (event) {
+    if (i < cpt) {
+      document.querySelector("#image1").src = `images/hang${i++}.png`;
+      /*Va itérer chaque image numérotée de hang que j'ai placé dans le dossier image
+      préférer le "if" à la boucle ici, car sinon va aller jusqu'à la dernière image numérotée*/
+    } else {
+      alert("Fini, vous avez parcouru les 5 images.");
+    }
+  });
+}
+//Exercice 6 //
+/*Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine
+ dès que la souris ne survol plus l'image.  
+**Bonus** Ne faire que deux fonctions JavaScript pour cet exercice.*/
+
+let x = document.querySelector("#image1");
+let cpt = 6;
+let i = 1;
+
+if (x.addEventListener) {
+
+  x.addEventListener("mouseover", function (event) {
+    if (i < cpt) {
+      document.querySelector("#image1").src = `images/hang${i++}.png`;
+    } else {
+      alert("fini");
+    }
+  });
+}
+if (x.addEventListener) {
+
+  x.addEventListener("mouseout", function (event) {
+    document.querySelector("#image1").src = `images/image1.jpg`;
+  });
+}
