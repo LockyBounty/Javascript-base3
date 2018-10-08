@@ -12,9 +12,18 @@ Dans le fichier HTML fourni, afficher une boite de dialogue avec le message : *"
 
 ## Exercice 3
 Dans le fichier HTML fourni, afficher une boite de dialogue avec la valeur du champ dès que l'on appuie sur le clavier.
+/*<form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+</form>*/
 
 ## Exercice 4
 Dans le fichier HTML fourni, faire que le bouton RAZ efface les données des champs du formulaire.
+/*<form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" name="button">RAZ</button>
+</form>*/
 
 ## Exercice 5
 Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.  
